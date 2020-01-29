@@ -46,4 +46,11 @@ such a project can be found here (a least sufficient demonstration of haskell "b
 https://github.com/fog-hs/rotateDistributed   
 clone this by typing;
 
-$ git clone https://github.com/fog-hs/rotateDistributed/tree/master/rotateDistributed   
+$ git clone https://github.com/fog-hs/rotateDistributed   
+
+the idea is that we want to be able to modify this existing cabal project to build using nix.   
+the first step is to make a default.nix file from within which we will perform callCabal2nix like so;    
+
+create default.nix and edit the contents to;
+nixpkgs.haskell.packages.822.callCabal2nix "nameOfMyProject" pathToMyProject   
+
