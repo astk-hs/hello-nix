@@ -37,10 +37,12 @@ $ nix-env --install nix-prefetch-git
 $ nix-env --install cabal-install   
 $ cabal update    
 
-----------------------------------
-ok, so now we are ready to try and use nix to build a haskell project.
-in order to ensure we can use all the build tools we might need from cabal,
-we should select a haskell project that just is just built using cabal,
-and that makes use of several .cabal files combined together using a cabal.project file.
-such a project can be found here (a least sufficient demonstration of haskell "backpack" via cabal);
-https://github.com/fog-hs/rotateDistributed
+----------------------------------   
+ok, so now we are ready to try and use nix to build a haskell project.   
+in order to ensure we can use all the build tools we might need from cabal,   
+we should select a haskell project that just is just built using cabal,   
+and that makes use of several .cabal files combined together using a cabal.project file.   
+such a project can be found here (a least sufficient demonstration of haskell "backpack" via cabal);   
+https://github.com/fog-hs/rotateDistributed   
+
+
