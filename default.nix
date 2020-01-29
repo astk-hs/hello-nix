@@ -1,4 +1,4 @@
-with import <nixpkgs> { allowUnfree = true; };
+with import <nixpkgs> { config.allowUnfree = true; };
 
 haskellPackages.override {
   overrides = self: super: {
