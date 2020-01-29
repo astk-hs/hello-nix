@@ -7,7 +7,7 @@ https://nathan.gs/2019/04/12/nix-on-windows/
 and   
 https://github.com/Gabriel439/haskell-nix   
    
-full instructions from these links are pasted into the installing.foo.tex files in *this* git repo.    
+<!--full instructions from these links are pasted into the installing.foo.tex files in *this* git repo.-->
 the composite instrunctions are;   
    
 Open PowerShell as Administrator and run:   
