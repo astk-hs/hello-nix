@@ -44,5 +44,6 @@ we should select a haskell project that is just built using cabal,
 and that makes use of several .cabal files combined together using a cabal.project file.   
 such a project can be found here (a least sufficient demonstration of haskell "backpack" via cabal);   
 https://github.com/fog-hs/rotateDistributed   
+clone this by typing;
 
-
+$ git clone https://github.com/fog-hs/rotateDistributed/tree/master/rotateDistributed   
