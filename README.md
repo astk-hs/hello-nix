@@ -45,7 +45,7 @@ and that makes use of several .cabal files combined together using a cabal.proje
 
 to start with, a regular cabal file should be used to compile a haskell project, which is found in the directory hello
 
-next, in the hello world directory, a cabal.project file is used to combine two .cabal files 
+next, in the hello world directory, a cabal.project file is used to combine two .cabal files    
 these two libries are then combined to print "hello world" to the screen.
 
 finally, a demonstration of uploading this to an Amazon Web Server (AWS) is given using the nix-copy-closure command in hello-aws.
