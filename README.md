@@ -43,9 +43,10 @@ in order to ensure we can use all the build tools we might need from cabal,
 we should select a haskell project that is just built using cabal,   
 and that makes use of several .cabal files combined together using a cabal.project file.   
 
-to start with, a regular cabal file should be used to compile a haskell project, which is found in the directory hello
+to start with, a regular cabal file should be used to compile a haskell project,   
+which is found in the directory hello-world, which prints hello-world to the screen. 
 
-next, in the hello world directory, a cabal.project file is used to combine two .cabal files    
+next, in the hello-project directory, a cabal.project file is used to combine two .cabal files    
 these two libries are then combined to print "hello world" to the screen.
 
 finally, a demonstration of uploading this to an Amazon Web Server (AWS) is given using the nix-copy-closure command in hello-aws.
