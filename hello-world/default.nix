@@ -1,1 +1,6 @@
-with import <nixpkgs> {}; stdenv.mkDerivation { name = "hello"; src = ./hello.hs; }
+with import <nixpkgs> {};
+haskell.packages.ghc881.override{
+ overrides = self: super: {
+  hello      = self.callCabal2nix "hello" ./. {};
+  };
+}
