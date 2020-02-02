@@ -5,4 +5,4 @@ $> cabal new-run hello
 
 or, using nix
 
-$> nix-build -A hello
+$> nix-build -A hello && ./result/bin/hello
