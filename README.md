@@ -42,15 +42,10 @@ ok, so now we are ready to try and use nix to build a haskell project.
 in order to ensure we can use all the build tools we might need from cabal,   
 we should select a haskell project that is just built using cabal,   
 and that makes use of several .cabal files combined together using a cabal.project file.   
-such a project can be found here (a least sufficient demonstration of haskell "backpack" via cabal);   
-https://github.com/fog-hs/rotateDistributed   
-clone this by typing;
 
-$ git clone https://github.com/fog-hs/rotateDistributed   
+to start with, a regular cabal file should be used to compile a haskell project, which is found in the directory hello
 
-the idea is that we want to be able to modify this existing cabal project to build using nix.   
-the first step is to make a default.nix file from within which we will perform callCabal2nix like so;    
-
-create default.nix and edit the contents to;
-nixpkgs.haskell.packages.822.callCabal2nix "nameOfMyProject" pathToMyProject   
+next, in the hello world directory, a cabal.project file is used to combine two .cabal files 
+these two libries are then combined to print "hello world" to the screen.
+finally, a demonstration of uploading this to an Amazon Web Server (AWS) is given using the nix-copy-closure command in hello-aws.
 
